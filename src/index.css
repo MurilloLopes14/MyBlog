@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/*! Global variables */
+:root {
+  --font: "Lato";
+  --color-1: #36454f;
+  --color-2: #1b1212;
+  --color-3: #a52a2a;
+  --color-4: #d3d3d3;
+  --light-color: #e5e4e2;
+  --dark-color: #000;
+}
+
+/* ! Reset browser styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+/* ! Global rules */
+body {
+  background-color: var(--color-2);
+  color: var(--light-color);
+  position: relative;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+p {
+  color: var(--color-4);
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+.post_container {
+  background-color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin: 3rem 0;
+  box-shadow: rgb(64, 63, 63) 0px 0px 20px 5px;
+  -webkit-box-shadow: rgb(64, 63, 63) 0px 0px 20px 5px;
+  -moz-box-shadow: rgb(64, 63, 63) 0px 0px 20px 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.post_container:hover {
+  transform: scale(1.05);
+  box-shadow: none;
+}
+
+.title {
+  font-size: 3rem;
+  border-bottom: 1px solid var(--light-color);
+  padding-bottom: 2rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  transition: 0.4s;
+}
+.title:hover {
+  color: var(--color-3);
+  border-color: var(--color-3);
+}
+
+.redirect {
+  background-color: var(--color-4);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-1);
+  border-radius: 10px;
+  opacity: 0.6;
+  color: var(--dark-color);
+  transition: 0.3s;
+}
+
+.redirect:hover {
+  opacity: 1;
+  color: var(--color-4);
+  background-color: var(--color-2);
+}
+
+.edit:hover {
+  background-color: var(--color-2);
+  border-color: var(--color-2);
+}
+
+.delete:hover {
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+}
+
+@media screen and (max-width: 485px) {
+  .title {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

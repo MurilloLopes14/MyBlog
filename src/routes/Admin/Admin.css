@@ -1,0 +1,17 @@
+#admin h1 {
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 1rem;
+}
+
+.actions a,
+button {
+  font-size: 1.2rem;
+  font-weight: 600;
+}

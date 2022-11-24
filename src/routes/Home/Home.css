@@ -1,0 +1,7 @@
+h2::first-letter {
+  text-transform: capitalize;
+}
+
+.redirect {
+  align-self: flex-end;
+}
